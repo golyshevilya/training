@@ -3,6 +3,13 @@ import random
 
 
 def probability(x_test, model):
+    """
+    Function for neural network processing
+    :param x_test: standardization data
+    :param model: the model of trained neuronet
+    :return: values_int: list with probabilities every number from 0 till 9
+             n: random number for choose picture from mnist
+    """
     # creating a random number
     n = round(random.random() * 100) * round(random.random() * 10)
 
